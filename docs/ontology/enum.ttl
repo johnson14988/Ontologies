@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix enum: <https://johnson14988.github.io/Source/docs/ontology/enum#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://johnson14988.github.io/Source/docs/ontology/enum> .
+@base <https://johnson14988.github.io/Source/docs/ontology/enum#> .
 
 <https://johnson14988.github.io/Source/docs/ontology/enum> rdf:type owl:Ontology .
 
@@ -25,8 +25,7 @@ enum:Abstract_Algebra rdf:type owl:Class ;
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Algebra
 enum:Algebra rdf:type owl:Class ;
-             rdfs:subClassOf enum:Maths ;
-             rdfs:label "Algebra"@en .
+             rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Algebraic_Geometry
@@ -167,10 +166,14 @@ enum:DSL rdf:type owl:Class ;
          rdfs:subClassOf enum:Programming_Language .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#DataScience
-enum:DataScience rdf:type owl:Class ;
-                 rdfs:subClassOf enum:Computer_Science ;
-                 rdfs:label "Data Science"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Data_Analysis
+enum:Data_Analysis rdf:type owl:Class ;
+                   rdfs:subClassOf enum:Computer_Science .
+
+
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Data_Science
+enum:Data_Science rdf:type owl:Class ;
+                  rdfs:subClassOf enum:Statistics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Differential_Geometry
@@ -190,8 +193,7 @@ enum:Digital_Electronics rdf:type owl:Class ;
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Docker
 enum:Docker rdf:type owl:Class ;
-            rdfs:subClassOf enum:Virtualization ;
-            rdfs:label "Docker"@en .
+            rdfs:subClassOf enum:Virtualization .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Econometrics
@@ -359,10 +361,9 @@ enum:Language rdf:type owl:Class ;
               rdfs:subClassOf enum:Enum .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#LieAlgebra
-enum:LieAlgebra rdf:type owl:Class ;
-                rdfs:subClassOf enum:Non-commutative_Algebra ;
-                rdfs:label "Lie Algebra"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Lie_Algebra
+enum:Lie_Algebra rdf:type owl:Class ;
+                 rdfs:subClassOf enum:Non-commutative_Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Linear_Algebra
@@ -420,10 +421,9 @@ enum:Number_Theory rdf:type owl:Class ;
                    rdfs:subClassOf enum:Maths .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#OperatingSystem
-enum:OperatingSystem rdf:type owl:Class ;
-                     rdfs:subClassOf enum:Computer_Architecture ;
-                     rdfs:label "Operating System"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Operating_System
+enum:Operating_System rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Computer_Architecture .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Optics
@@ -601,16 +601,14 @@ enum:VB rdf:type owl:Class ;
         rdfs:subClassOf enum:GPL .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#VirtualMachine
-enum:VirtualMachine rdf:type owl:Class ;
-                    rdfs:subClassOf enum:Virtualization ;
-                    rdfs:label "Virtual Machine"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Virtual_Machine
+enum:Virtual_Machine rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Virtualization .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Virtualization
 enum:Virtualization rdf:type owl:Class ;
-                    rdfs:subClassOf enum:Computer_Architecture ;
-                    rdfs:label "Virtualization"@en .
+                    rdfs:subClassOf enum:Computer_Architecture .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#WIP
