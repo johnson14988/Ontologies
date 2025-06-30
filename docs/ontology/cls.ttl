@@ -1,12 +1,12 @@
-@prefix : <https://johnson14988.github.io/Source/docs/ontology/schema_category#> .
+@prefix : <https://johnson14988.github.io/Source/docs/ontology/cls#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://johnson14988.github.io/Source/docs/ontology/schema_category#> .
+@base <https://johnson14988.github.io/Source/docs/ontology/cls#> .
 
-<https://johnson14988.github.io/Source/docs/ontology/schema_category> rdf:type owl:Ontology ;
+<https://johnson14988.github.io/Source/docs/ontology/cls> rdf:type owl:Ontology ;
                                                                        rdfs:label "Describing the structure of JSON schemas" .
 
 #################################################################
