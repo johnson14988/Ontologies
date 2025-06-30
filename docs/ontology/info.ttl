@@ -1,10 +1,10 @@
 @prefix : <https://johnson14988.github.io/Source/docs/ontology/info#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://johnson14988.github.io/Source/docs/ontology/info#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
 @base <https://johnson14988.github.io/Source/docs/ontology/info> .
 
 <https://johnson14988.github.io/Source/docs/ontology/info> rdf:type owl:Ontology .
@@ -14,44 +14,44 @@
 #################################################################
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasCreatedDate
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasCreatedDate> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasCreatedDate rdf:type owl:ObjectProperty ;
+                                                                         rdfs:subPropertyOf :hasProp .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasField
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasField> rdf:type owl:ObjectProperty ;
-                                                                   rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasField rdf:type owl:ObjectProperty ;
+                                                                   rdfs:subPropertyOf :hasProp .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasID
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasID> rdf:type owl:ObjectProperty ;
-                                                                rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasID rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf :hasProp .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasLanguage
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasLanguage> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasLanguage rdf:type owl:ObjectProperty ;
+                                                                      rdfs:subPropertyOf :hasProp .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasLastModifiedDate
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasLastModifiedDate> rdf:type owl:ObjectProperty ;
-                                                                              rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasLastModifiedDate rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf :hasProp .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasProp
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:domain <https://johnson14988.github.io/Source/docs/ontology/cls#Object> ;
-                                                                  rdfs:range <https://johnson14988.github.io/Source/docs/ontology/cls#Property> .
+:hasProp rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain :Object ;
+                                                                  rdfs:range :Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasUploader
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasUploader> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasUploader rdf:type owl:ObjectProperty ;
+                                                                      rdfs:subPropertyOf :hasProp .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#hasVersion
-<https://johnson14988.github.io/Source/docs/ontology/cls#hasVersion> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:subPropertyOf <https://johnson14988.github.io/Source/docs/ontology/cls#hasProp> .
+:hasVersion rdf:type owl:ObjectProperty ;
+                                                                     rdfs:subPropertyOf :hasProp .
 
 
 #################################################################
@@ -59,76 +59,76 @@
 #################################################################
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Code
-<https://johnson14988.github.io/Source/docs/ontology/cls#Code> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Text> .
+:Code rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Text .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#CreatedDate
-<https://johnson14988.github.io/Source/docs/ontology/cls#CreatedDate> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> .
+:CreatedDate rdf:type owl:Class ;
+                                                                      rdfs:subClassOf :General_Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Domain_Specific_Property
-<https://johnson14988.github.io/Source/docs/ontology/cls#Domain_Specific_Property> rdf:type owl:Class ;
-                                                                                   rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Property> .
+:Domain_Specific_Property rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Field
-<https://johnson14988.github.io/Source/docs/ontology/cls#Field> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> .
+:Field rdf:type owl:Class ;
+                                                                rdfs:subClassOf :General_Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#General_Property
-<https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Property> .
+:General_Property rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Image
-<https://johnson14988.github.io/Source/docs/ontology/cls#Image> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Object> .
+:Image rdf:type owl:Class ;
+                                                                rdfs:subClassOf :Object .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Language
-<https://johnson14988.github.io/Source/docs/ontology/cls#Language> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> .
+:Language rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :General_Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Language_Material
-<https://johnson14988.github.io/Source/docs/ontology/cls#Language_Material> rdf:type owl:Class ;
-                                                                            rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Text> .
+:Language_Material rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :Text .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#LastModifiedDate
-<https://johnson14988.github.io/Source/docs/ontology/cls#LastModifiedDate> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> .
+:LastModifiedDate rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :General_Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Object
-<https://johnson14988.github.io/Source/docs/ontology/cls#Object> rdf:type owl:Class .
+:Object rdf:type owl:Class .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Property
-<https://johnson14988.github.io/Source/docs/ontology/cls#Property> rdf:type owl:Class .
+:Property rdf:type owl:Class .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#STEM_Text
-<https://johnson14988.github.io/Source/docs/ontology/cls#STEM_Text> rdf:type owl:Class ;
-                                                                    rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Text> .
+:STEM_Text rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :Text .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Text
-<https://johnson14988.github.io/Source/docs/ontology/cls#Text> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#Object> .
+:Text rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Object .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Uploader
-<https://johnson14988.github.io/Source/docs/ontology/cls#Uploader> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> .
+:Uploader rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :General_Property .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/cls#Version
-<https://johnson14988.github.io/Source/docs/ontology/cls#Version> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <https://johnson14988.github.io/Source/docs/ontology/cls#General_Property> .
+:Version rdf:type owl:Class ;
+                                                                  rdfs:subClassOf :General_Property .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
