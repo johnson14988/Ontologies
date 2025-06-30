@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sample Schema",
+  "description": "Here defines some generic schema properties, one can add new properties behind them.",
+  "type": "object",
+  "properties": {
+    "identifiers": {
+      "type": "array",
+      "description": "name or alias",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "version": {"type": "string"},
+    "author": {"type": "string"},
+    "createdOn": {"type": "string"},
+    "accordingTo": {"type": "string"},
+    "priority": {"type": "string"},
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "desc": {"type": "string"},
+    "field": {"type": "string"},
+    "pre": {
+      "type": "array",
+      "description": "short for prerequisites",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "related": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Library Function Schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "author": {"type": "string"},
+    "createdOn": {"type": "string"},
+    "accordingTo": {"type": "string"},
+    "priority": {"type": "string"},
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "desc": {"type": "string"},
+    "field": {"type": "string"},
+    "pre": {
+      "type": "array",
+      "description": "short for prerequisites",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "related": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "lib": {"type": "string"},
+    "funcName": {"type": "string"},
+    "argList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "argName": { "type": "string" },
+          "argType": { "type": "string" },
+          "argDesc": { "type": "string" }
+        },
+        "required": ["argName", "argType"],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "result": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "returnValue": {"type": "string"},
+          "returnMeaning": {"type": "string"}
+        },
+        "required": ["returnValue"],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": ["lib", "funcName"],
+  "additionalProperties": false
+}

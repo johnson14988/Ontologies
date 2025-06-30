@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "General Theory Schema",
+  "type": "object",
+  "properties": {
+    "identifiers": {
+      "type": "array",
+      "description": "name or alias",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "version": {"type": "string"},
+    "author": {"type": "string"},
+    "createdOn": {"type": "string"},
+    "accordingTo": {"type": "string"},
+    "priority": {"type": "string"},
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "desc": {"type": "string"},
+    "field": {"type": "string"},
+    "pre": {
+      "type": "array",
+      "description": "short for prerequisites",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "related": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "motive": {"type": "string"},
+    "goal": {"type": "string"},
+    "statement": {"type": "string"},
+    "applications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "appField": {"type": "string"},
+          "appSummary": {"type": "string"}
+        },
+        "required": ["appField", "appSummary"],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": ["statement"],
+  "additionalProperties": false
+}

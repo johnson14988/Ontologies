@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Maths Proof Schema",
+  "type": "object",
+  "properties": {
+    "version": {"type": "string"},
+    "author": {"type": "string"},
+    "createdOn": {"type": "string"},
+    "accordingTo": {"type": "string"},
+    "priority": {"type": "string"},
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "desc": {"type": "string"},
+    "pre": {
+      "type": "array",
+      "description": "short for prerequisites",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "related": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "propID": {"type": "string"}
+  },
+  "required": ["propID"],
+  "additionalProperties": false
+}
