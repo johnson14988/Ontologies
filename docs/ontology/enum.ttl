@@ -1,8 +1,9 @@
-@prefix enum: <https://johnson14988.github.io/Source/docs/ontology/enum#> .
+@prefix : <https://johnson14988.github.io/Source/docs/ontology/enum#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix enum: <https://johnson14988.github.io/Source/docs/ontology/enum#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://johnson14988.github.io/Source/docs/ontology/enum> .
 
@@ -13,634 +14,623 @@
 #################################################################
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#AI
-field:AI rdf:type owl:Class ;
-         rdfs:subClassOf field:Computer_Science .
+enum:AI rdf:type owl:Class ;
+        rdfs:subClassOf enum:Computer_Science .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Abstract_Algebra
-field:Abstract_Algebra rdf:type owl:Class ;
-                       rdfs:subClassOf field:Algebra .
+enum:Abstract_Algebra rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Algebra
-field:Algebra rdf:type owl:Class ;
-              rdfs:subClassOf field:Maths ;
-              rdfs:label "Algebra"@en .
+enum:Algebra rdf:type owl:Class ;
+             rdfs:subClassOf enum:Maths ;
+             rdfs:label "Algebra"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Algebraic_Geometry
-field:Algebraic_Geometry rdf:type owl:Class ;
-                         rdfs:subClassOf field:Algebra ,
-                                         field:Geometry .
+enum:Algebraic_Geometry rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Algebra ,
+                                        enum:Geometry .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Algebraic_Topology
-field:Algebraic_Topology rdf:type owl:Class ;
-                         rdfs:subClassOf field:Algebra ,
-                                         field:Topology .
+enum:Algebraic_Topology rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Algebra ,
+                                        enum:Topology .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Algorithm
-field:Algorithm rdf:type owl:Class ;
-                rdfs:subClassOf field:Computer_Science .
+enum:Algorithm rdf:type owl:Class ;
+               rdfs:subClassOf enum:Computer_Science .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#AnalogElectronics
-field:AnalogElectronics rdf:type owl:Class ;
-                        rdfs:subClassOf field:Electronics ;
-                        rdfs:label "Analog Electronics"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Analog_Electronics
+enum:Analog_Electronics rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Electronics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Analytical_Mechanics
-field:Analytical_Mechanics rdf:type owl:Class ;
-                           rdfs:subClassOf field:Physics .
+enum:Analytical_Mechanics rdf:type owl:Class ;
+                          rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Applicative_Maths
-field:Applicative_Maths rdf:type owl:Class ;
-                        rdfs:subClassOf field:Maths .
+enum:Applicative_Maths rdf:type owl:Class ;
+                       rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Arabic
-field:Arabic rdf:type owl:Class ;
-             rdfs:subClassOf field:Natural_Language .
+enum:Arabic rdf:type owl:Class ;
+            rdfs:subClassOf enum:Natural_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Backend
-field:Backend rdf:type owl:Class ;
-              rdfs:subClassOf field:Web_Development .
+enum:Backend rdf:type owl:Class ;
+             rdfs:subClassOf enum:Web_Development .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Biochemistry
-field:Biochemistry rdf:type owl:Class ;
-                   rdfs:subClassOf field:Biology ,
-                                   field:Chemistry ;
-                   rdfs:label "Biochemistry"@en .
+enum:Biochemistry rdf:type owl:Class ;
+                  rdfs:subClassOf enum:Biology ,
+                                  enum:Chemistry .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Biology
-field:Biology rdf:type owl:Class ;
-              rdfs:subClassOf field:WIP ;
-              rdfs:label "Biology"@en .
+enum:Biology rdf:type owl:Class ;
+             rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#C
-field:C rdf:type owl:Class ;
-        rdfs:subClassOf field:GPL .
+enum:C rdf:type owl:Class ;
+       rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#CUDA
-field:CUDA rdf:type owl:Class ;
-           rdfs:subClassOf field:DSL .
+enum:CUDA rdf:type owl:Class ;
+          rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Category_Theory
-field:Category_Theory rdf:type owl:Class ;
-                      rdfs:subClassOf field:Maths .
+enum:Category_Theory rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Chemistry
-field:Chemistry rdf:type owl:Class ;
-                rdfs:subClassOf field:WIP ;
-                rdfs:label "Chemistry"@en .
+enum:Chemistry rdf:type owl:Class ;
+               rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Classic_Information_Theory
-field:Classic_Information_Theory rdf:type owl:Class ;
-                                 rdfs:subClassOf field:Information_Theory .
+enum:Classic_Information_Theory rdf:type owl:Class ;
+                                rdfs:subClassOf enum:Information_Theory .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Classical_Mechanics
-field:Classical_Mechanics rdf:type owl:Class ;
-                          rdfs:subClassOf field:Physics .
+enum:Classical_Mechanics rdf:type owl:Class ;
+                         rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Combinatorics
-field:Combinatorics rdf:type owl:Class ;
-                    rdfs:subClassOf field:Maths ;
-                    rdfs:label "Combinatorics"@en .
+enum:Combinatorics rdf:type owl:Class ;
+                   rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Commutative_Algebra
-field:Commutative_Algebra rdf:type owl:Class ;
-                          rdfs:subClassOf field:Abstract_Algebra .
+enum:Commutative_Algebra rdf:type owl:Class ;
+                         rdfs:subClassOf enum:Abstract_Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Complex_Analysis
-field:Complex_Analysis rdf:type owl:Class ;
-                       rdfs:subClassOf field:Mathematical_Analysis .
-
-
-###  https://johnson14988.github.io/Source/docs/ontology/enum#ComputerVision
-field:ComputerVision rdf:type owl:Class ;
-                     rdfs:subClassOf field:AI ;
-                     rdfs:label "Computer Vision"@en .
+enum:Complex_Analysis rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Mathematical_Analysis .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Computer_Architecture
-field:Computer_Architecture rdf:type owl:Class ;
-                            rdfs:subClassOf field:Computer_Science .
+enum:Computer_Architecture rdf:type owl:Class ;
+                           rdfs:subClassOf enum:Computer_Science .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Computer_Network
-field:Computer_Network rdf:type owl:Class ;
-                       rdfs:subClassOf field:Computer_Science .
+enum:Computer_Network rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Computer_Science .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Computer_Science
-field:Computer_Science rdf:type owl:Class ;
-                       rdfs:subClassOf field:Field .
+enum:Computer_Science rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Field .
+
+
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Computer_Vision
+enum:Computer_Vision rdf:type owl:Class ;
+                     rdfs:subClassOf enum:AI .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Convex_Analysis
-field:Convex_Analysis rdf:type owl:Class ;
-                      rdfs:subClassOf field:Mathematical_Analysis .
+enum:Convex_Analysis rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Mathematical_Analysis .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Cpp
-field:Cpp rdf:type owl:Class ;
-          rdfs:subClassOf field:GPL .
+enum:Cpp rdf:type owl:Class ;
+         rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Csup
-field:Csup rdf:type owl:Class ;
-           rdfs:subClassOf field:GPL .
+enum:Csup rdf:type owl:Class ;
+          rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#DSL
-field:DSL rdf:type owl:Class ;
-          rdfs:subClassOf field:Programming_Language .
+enum:DSL rdf:type owl:Class ;
+         rdfs:subClassOf enum:Programming_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#DataScience
-field:DataScience rdf:type owl:Class ;
-                  rdfs:subClassOf field:Computer_Science ;
-                  rdfs:label "Data Science"@en .
+enum:DataScience rdf:type owl:Class ;
+                 rdfs:subClassOf enum:Computer_Science ;
+                 rdfs:label "Data Science"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Differential_Geometry
-field:Differential_Geometry rdf:type owl:Class ;
-                            rdfs:subClassOf field:Geometry .
+enum:Differential_Geometry rdf:type owl:Class ;
+                           rdfs:subClassOf enum:Geometry .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Differential_Topology
-field:Differential_Topology rdf:type owl:Class ;
-                            rdfs:subClassOf field:Topology .
+enum:Differential_Topology rdf:type owl:Class ;
+                           rdfs:subClassOf enum:Topology .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#DigitalElectronics
-field:DigitalElectronics rdf:type owl:Class ;
-                         rdfs:subClassOf field:Electronics ;
-                         rdfs:label "Digital Electronics"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Digital_Electronics
+enum:Digital_Electronics rdf:type owl:Class ;
+                         rdfs:subClassOf enum:Electronics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Docker
-field:Docker rdf:type owl:Class ;
-             rdfs:subClassOf field:Virtualization ;
-             rdfs:label "Docker"@en .
+enum:Docker rdf:type owl:Class ;
+            rdfs:subClassOf enum:Virtualization ;
+            rdfs:label "Docker"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Econometrics
-field:Econometrics rdf:type owl:Class ;
-                   rdfs:subClassOf field:Economics .
+enum:Econometrics rdf:type owl:Class ;
+                  rdfs:subClassOf enum:Economics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Economics
-field:Economics rdf:type owl:Class ;
-                rdfs:subClassOf field:Field .
+enum:Economics rdf:type owl:Class ;
+               rdfs:subClassOf enum:Field .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Electromagnetics
-field:Electromagnetics rdf:type owl:Class ;
-                       rdfs:subClassOf field:Physics .
+enum:Electromagnetics rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Electronics
-field:Electronics rdf:type owl:Class ;
-                  rdfs:subClassOf field:WIP ;
-                  rdfs:label "Electronics"@en .
+enum:Electronics rdf:type owl:Class ;
+                 rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Embedded_System
-field:Embedded_System rdf:type owl:Class ;
-                      rdfs:subClassOf field:Computer_Architecture .
+enum:Embedded_System rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Computer_Architecture .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#English
-field:English rdf:type owl:Class ;
-              rdfs:subClassOf field:Natural_Language .
+enum:English rdf:type owl:Class ;
+             rdfs:subClassOf enum:Natural_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Enum
-field:Enum rdf:type owl:Class .
+enum:Enum rdf:type owl:Class .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Field
-field:Field rdf:type owl:Class ;
-            rdfs:subClassOf field:Enum .
+enum:Field rdf:type owl:Class ;
+           rdfs:subClassOf enum:Enum .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Finance
-field:Finance rdf:type owl:Class ;
-              rdfs:subClassOf field:WIP .
+enum:Finance rdf:type owl:Class ;
+             rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Fluid_Physics
-field:Fluid_Physics rdf:type owl:Class ;
-                    rdfs:subClassOf field:Physics .
+enum:Fluid_Physics rdf:type owl:Class ;
+                   rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Fourier_Analysis
-field:Fourier_Analysis rdf:type owl:Class ;
-                       rdfs:subClassOf field:Harmonic_Analysis .
+enum:Fourier_Analysis rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Harmonic_Analysis .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#French
-field:French rdf:type owl:Class ;
-             rdfs:subClassOf field:Natural_Language .
+enum:French rdf:type owl:Class ;
+            rdfs:subClassOf enum:Natural_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Frontend
-field:Frontend rdf:type owl:Class ;
-               rdfs:subClassOf field:Web_Development .
+enum:Frontend rdf:type owl:Class ;
+              rdfs:subClassOf enum:Web_Development .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Functional_Analysis
-field:Functional_Analysis rdf:type owl:Class ;
-                          rdfs:subClassOf field:Mathematical_Analysis .
+enum:Functional_Analysis rdf:type owl:Class ;
+                         rdfs:subClassOf enum:Mathematical_Analysis .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#GPL
-field:GPL rdf:type owl:Class ;
-          rdfs:subClassOf field:Programming_Language .
+enum:GPL rdf:type owl:Class ;
+         rdfs:subClassOf enum:Programming_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#General_Relativity
-field:General_Relativity rdf:type owl:Class ;
-                         rdfs:subClassOf field:Relativity .
+enum:General_Relativity rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Relativity .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#General_Topology
-field:General_Topology rdf:type owl:Class ;
-                       rdfs:subClassOf field:Topology .
+enum:General_Topology rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Topology .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Geometric_Topology
-field:Geometric_Topology rdf:type owl:Class ;
-                         rdfs:subClassOf field:Geometry ,
-                                         field:Topology .
+enum:Geometric_Topology rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Geometry ,
+                                        enum:Topology .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Geometry
-field:Geometry rdf:type owl:Class ;
-               rdfs:subClassOf field:Maths ;
-               rdfs:label "Geometry"@en .
+enum:Geometry rdf:type owl:Class ;
+              rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#German
-field:German rdf:type owl:Class ;
-             rdfs:subClassOf field:Natural_Language .
+enum:German rdf:type owl:Class ;
+            rdfs:subClassOf enum:Natural_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Go
-field:Go rdf:type owl:Class ;
-         rdfs:subClassOf field:GPL .
+enum:Go rdf:type owl:Class ;
+        rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Graph_Theory
-field:Graph_Theory rdf:type owl:Class ;
-                   rdfs:subClassOf field:Maths .
+enum:Graph_Theory rdf:type owl:Class ;
+                  rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#HTML
-field:HTML rdf:type owl:Class ;
-           rdfs:subClassOf field:DSL .
+enum:HTML rdf:type owl:Class ;
+          rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Harmonic_Analysis
-field:Harmonic_Analysis rdf:type owl:Class ;
-                        rdfs:subClassOf field:Mathematical_Analysis .
+enum:Harmonic_Analysis rdf:type owl:Class ;
+                       rdfs:subClassOf enum:Mathematical_Analysis .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Homology_Theory
-field:Homology_Theory rdf:type owl:Class ;
-                      rdfs:subClassOf field:Algebra .
+enum:Homology_Theory rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Information_Theory
-field:Information_Theory rdf:type owl:Class ;
-                         rdfs:subClassOf field:Applicative_Maths .
+enum:Information_Theory rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Applicative_Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Japanese
-field:Japanese rdf:type owl:Class ;
-               rdfs:subClassOf field:Natural_Language .
+enum:Japanese rdf:type owl:Class ;
+              rdfs:subClassOf enum:Natural_Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Java
-field:Java rdf:type owl:Class ;
-           rdfs:subClassOf field:GPL .
+enum:Java rdf:type owl:Class ;
+          rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Javascript
-field:Javascript rdf:type owl:Class ;
-                 rdfs:subClassOf field:GPL .
+enum:Javascript rdf:type owl:Class ;
+                rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Kotlin
-field:Kotlin rdf:type owl:Class ;
-             rdfs:subClassOf field:GPL .
+enum:Kotlin rdf:type owl:Class ;
+            rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#LEAN4
-field:LEAN4 rdf:type owl:Class ;
-            rdfs:subClassOf field:DSL .
+enum:LEAN4 rdf:type owl:Class ;
+           rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#LaTeX
-field:LaTeX rdf:type owl:Class ;
-            rdfs:subClassOf field:DSL .
+enum:LaTeX rdf:type owl:Class ;
+           rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Language
-field:Language rdf:type owl:Class ;
-               rdfs:subClassOf field:Enum .
+enum:Language rdf:type owl:Class ;
+              rdfs:subClassOf enum:Enum .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#LieAlgebra
-field:LieAlgebra rdf:type owl:Class ;
-                 rdfs:subClassOf field:Non-commutative_Algebra ;
-                 rdfs:label "Lie Algebra"@en .
+enum:LieAlgebra rdf:type owl:Class ;
+                rdfs:subClassOf enum:Non-commutative_Algebra ;
+                rdfs:label "Lie Algebra"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Linear_Algebra
-field:Linear_Algebra rdf:type owl:Class ;
-                     rdfs:subClassOf field:Algebra .
+enum:Linear_Algebra rdf:type owl:Class ;
+                    rdfs:subClassOf enum:Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Macroeconomics
-field:Macroeconomics rdf:type owl:Class ;
-                     rdfs:subClassOf field:Economics .
+enum:Macroeconomics rdf:type owl:Class ;
+                    rdfs:subClassOf enum:Economics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Mathematical_Analysis
-field:Mathematical_Analysis rdf:type owl:Class ;
-                            rdfs:subClassOf field:Maths .
+enum:Mathematical_Analysis rdf:type owl:Class ;
+                           rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Mathematical_Logic
-field:Mathematical_Logic rdf:type owl:Class ;
-                         rdfs:subClassOf field:Maths .
+enum:Mathematical_Logic rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Maths
-field:Maths rdf:type owl:Class ;
-            rdfs:subClassOf field:Field .
+enum:Maths rdf:type owl:Class ;
+           rdfs:subClassOf enum:Field .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Microeconomics
-field:Microeconomics rdf:type owl:Class ;
-                     rdfs:subClassOf field:Economics .
+enum:Microeconomics rdf:type owl:Class ;
+                    rdfs:subClassOf enum:Economics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Modeling
-field:Modeling rdf:type owl:Class ;
-               rdfs:subClassOf field:Applicative_Maths .
+enum:Modeling rdf:type owl:Class ;
+              rdfs:subClassOf enum:Applicative_Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#NLP
-field:NLP rdf:type owl:Class ;
-          rdfs:subClassOf field:AI .
+enum:NLP rdf:type owl:Class ;
+         rdfs:subClassOf enum:AI .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Natural_Language
-field:Natural_Language rdf:type owl:Class ;
-                       rdfs:subClassOf field:Language .
+enum:Natural_Language rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Non-commutative_Algebra
-field:Non-commutative_Algebra rdf:type owl:Class ;
-                              rdfs:subClassOf field:Abstract_Algebra .
+enum:Non-commutative_Algebra rdf:type owl:Class ;
+                             rdfs:subClassOf enum:Abstract_Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Number_Theory
-field:Number_Theory rdf:type owl:Class ;
-                    rdfs:subClassOf field:Maths .
+enum:Number_Theory rdf:type owl:Class ;
+                   rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#OperatingSystem
-field:OperatingSystem rdf:type owl:Class ;
-                      rdfs:subClassOf field:Computer_Architecture ;
-                      rdfs:label "Operating System"@en .
+enum:OperatingSystem rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Computer_Architecture ;
+                     rdfs:label "Operating System"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Optics
-field:Optics rdf:type owl:Class ;
-             rdfs:subClassOf field:Physics .
+enum:Optics rdf:type owl:Class ;
+            rdfs:subClassOf enum:Physics .
 
 
-###  https://johnson14988.github.io/Source/docs/ontology/enum#OrganicChemistry
-field:OrganicChemistry rdf:type owl:Class ;
-                       rdfs:subClassOf field:Chemistry ;
-                       rdfs:label "Organic Chemistry"@en .
+###  https://johnson14988.github.io/Source/docs/ontology/enum#Organic_Chemistry
+enum:Organic_Chemistry rdf:type owl:Class ;
+                       rdfs:subClassOf enum:Chemistry .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#PHP
-field:PHP rdf:type owl:Class ;
-          rdfs:subClassOf field:GPL .
+enum:PHP rdf:type owl:Class ;
+         rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Particle_Physics
-field:Particle_Physics rdf:type owl:Class ;
-                       rdfs:subClassOf field:Physics .
+enum:Particle_Physics rdf:type owl:Class ;
+                      rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Philosophy
-field:Philosophy rdf:type owl:Class ;
-                 rdfs:subClassOf field:WIP .
+enum:Philosophy rdf:type owl:Class ;
+                rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Physics
-field:Physics rdf:type owl:Class ;
-              rdfs:subClassOf field:Field .
+enum:Physics rdf:type owl:Class ;
+             rdfs:subClassOf enum:Field .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Physiology
-field:Physiology rdf:type owl:Class ;
-                 rdfs:subClassOf field:Biology .
+enum:Physiology rdf:type owl:Class ;
+                rdfs:subClassOf enum:Biology .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Powershell
-field:Powershell rdf:type owl:Class ;
-                 rdfs:subClassOf field:GPL .
+enum:Powershell rdf:type owl:Class ;
+                rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Programming
-field:Programming rdf:type owl:Class ;
-                  rdfs:subClassOf field:Computer_Science .
+enum:Programming rdf:type owl:Class ;
+                 rdfs:subClassOf enum:Computer_Science .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Programming_Language
-field:Programming_Language rdf:type owl:Class ;
-                           rdfs:subClassOf field:Language .
+enum:Programming_Language rdf:type owl:Class ;
+                          rdfs:subClassOf enum:Language .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Projective_Geometry
-field:Projective_Geometry rdf:type owl:Class ;
-                          rdfs:subClassOf field:Geometry .
+enum:Projective_Geometry rdf:type owl:Class ;
+                         rdfs:subClassOf enum:Geometry .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Psychology
-field:Psychology rdf:type owl:Class ;
-                 rdfs:subClassOf field:WIP .
+enum:Psychology rdf:type owl:Class ;
+                rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Python
-field:Python rdf:type owl:Class ;
-             rdfs:subClassOf field:GPL .
+enum:Python rdf:type owl:Class ;
+            rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Quantum_Mechanics
-field:Quantum_Mechanics rdf:type owl:Class ;
-                        rdfs:subClassOf field:Physics .
+enum:Quantum_Mechanics rdf:type owl:Class ;
+                       rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#R
-field:R rdf:type owl:Class ;
-        rdfs:subClassOf field:DSL .
+enum:R rdf:type owl:Class ;
+       rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Real_Analysis
-field:Real_Analysis rdf:type owl:Class ;
-                    rdfs:subClassOf field:Mathematical_Analysis .
+enum:Real_Analysis rdf:type owl:Class ;
+                   rdfs:subClassOf enum:Mathematical_Analysis .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Regex
-field:Regex rdf:type owl:Class ;
-            rdfs:subClassOf field:DSL .
+enum:Regex rdf:type owl:Class ;
+           rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Relativity
-field:Relativity rdf:type owl:Class ;
-                 rdfs:subClassOf field:Physics .
+enum:Relativity rdf:type owl:Class ;
+                rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Representation_Theory
-field:Representation_Theory rdf:type owl:Class ;
-                            rdfs:subClassOf field:Algebra .
+enum:Representation_Theory rdf:type owl:Class ;
+                           rdfs:subClassOf enum:Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Ruby
-field:Ruby rdf:type owl:Class ;
-           rdfs:subClassOf field:GPL .
+enum:Ruby rdf:type owl:Class ;
+          rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Rust
-field:Rust rdf:type owl:Class ;
-           rdfs:subClassOf field:GPL .
+enum:Rust rdf:type owl:Class ;
+          rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#SPARQL
-field:SPARQL rdf:type owl:Class ;
-             rdfs:subClassOf field:DSL .
+enum:SPARQL rdf:type owl:Class ;
+            rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#SQL
-field:SQL rdf:type owl:Class ;
-          rdfs:subClassOf field:DSL .
+enum:SQL rdf:type owl:Class ;
+         rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Semantic_Web
-field:Semantic_Web rdf:type owl:Class ;
-                   rdfs:subClassOf field:WIP ;
-                   rdfs:label "Semantic Web" .
+enum:Semantic_Web rdf:type owl:Class ;
+                  rdfs:subClassOf enum:WIP .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Set_Theory
-field:Set_Theory rdf:type owl:Class ;
-                 rdfs:subClassOf field:Mathematical_Logic .
+enum:Set_Theory rdf:type owl:Class ;
+                rdfs:subClassOf enum:Mathematical_Logic .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Solid_Physics
-field:Solid_Physics rdf:type owl:Class ;
-                    rdfs:subClassOf field:Physics .
+enum:Solid_Physics rdf:type owl:Class ;
+                   rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Solidity
-field:Solidity rdf:type owl:Class ;
-               rdfs:subClassOf field:DSL .
+enum:Solidity rdf:type owl:Class ;
+              rdfs:subClassOf enum:DSL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Special_Relativity
-field:Special_Relativity rdf:type owl:Class ;
-                         rdfs:subClassOf field:Relativity .
+enum:Special_Relativity rdf:type owl:Class ;
+                        rdfs:subClassOf enum:Relativity .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Statistical_Physics
-field:Statistical_Physics rdf:type owl:Class ;
-                          rdfs:subClassOf field:Physics .
+enum:Statistical_Physics rdf:type owl:Class ;
+                         rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Statistics
-field:Statistics rdf:type owl:Class ;
-                 rdfs:subClassOf field:Applicative_Maths .
+enum:Statistics rdf:type owl:Class ;
+                rdfs:subClassOf enum:Applicative_Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Swift
-field:Swift rdf:type owl:Class ;
-            rdfs:subClassOf field:GPL .
+enum:Swift rdf:type owl:Class ;
+           rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Thermodynamics
-field:Thermodynamics rdf:type owl:Class ;
-                     rdfs:subClassOf field:Physics .
+enum:Thermodynamics rdf:type owl:Class ;
+                    rdfs:subClassOf enum:Physics .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Topology
-field:Topology rdf:type owl:Class ;
-               rdfs:subClassOf field:Maths .
+enum:Topology rdf:type owl:Class ;
+              rdfs:subClassOf enum:Maths .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Universal_Algebra
-field:Universal_Algebra rdf:type owl:Class ;
-                        rdfs:subClassOf field:Algebra .
+enum:Universal_Algebra rdf:type owl:Class ;
+                       rdfs:subClassOf enum:Algebra .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#VB
-field:VB rdf:type owl:Class ;
-         rdfs:subClassOf field:GPL .
+enum:VB rdf:type owl:Class ;
+        rdfs:subClassOf enum:GPL .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#VirtualMachine
-field:VirtualMachine rdf:type owl:Class ;
-                     rdfs:subClassOf field:Virtualization ;
-                     rdfs:label "Virtual Machine"@en .
+enum:VirtualMachine rdf:type owl:Class ;
+                    rdfs:subClassOf enum:Virtualization ;
+                    rdfs:label "Virtual Machine"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Virtualization
-field:Virtualization rdf:type owl:Class ;
-                     rdfs:subClassOf field:Computer_Architecture ;
-                     rdfs:label "Virtualization"@en .
+enum:Virtualization rdf:type owl:Class ;
+                    rdfs:subClassOf enum:Computer_Architecture ;
+                    rdfs:label "Virtualization"@en .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#WIP
-field:WIP rdf:type owl:Class ;
-          rdfs:subClassOf field:Field .
+enum:WIP rdf:type owl:Class ;
+         rdfs:subClassOf enum:Field .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Web3
-field:Web3 rdf:type owl:Class ;
-           rdfs:subClassOf field:Web_Development .
+enum:Web3 rdf:type owl:Class ;
+          rdfs:subClassOf enum:Web_Development .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Web_Development
-field:Web_Development rdf:type owl:Class ;
-                      rdfs:subClassOf field:Computer_Science .
+enum:Web_Development rdf:type owl:Class ;
+                     rdfs:subClassOf enum:Computer_Science .
 
 
 ###  https://johnson14988.github.io/Source/docs/ontology/enum#Web_IDL
-field:Web_IDL rdf:type owl:Class ;
-              rdfs:subClassOf field:DSL .
+enum:Web_IDL rdf:type owl:Class ;
+             rdfs:subClassOf enum:DSL .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
