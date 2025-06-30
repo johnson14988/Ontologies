@@ -1,8 +1,8 @@
 {
-  "$id": "https://example.com/schemas/child.json",
+  "$id": "https://johnson14988.github.io/Source/docs/json_schema/example_schema/child1.json",
   "allOf": [
-    { "$ref": "https://example.com/schemas/parent1.json" },
-    { "$ref": "https://example.com/schemas/parent2.json" }
+    { "$ref": "https://johnson14988.github.io/Source/docs/json_schema/example_schema/parent1.json" },
+    { "$ref": "https://johnson14988.github.io/Source/docs/json_schema/example_schema/parent2.json" }
   ],
   "type": "object",
   "properties": {
