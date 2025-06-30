@@ -1,0 +1,12 @@
+{
+  "$id": "https://example.com/schemas/child.json",
+  "allOf": [
+    { "$ref": "https://example.com/schemas/parent1.json" },
+    { "$ref": "https://example.com/schemas/parent2.json" }
+  ],
+  "type": "object",
+  "properties": {
+    "grade": { "type": "string" }
+  },
+  "required": ["grade"]
+}

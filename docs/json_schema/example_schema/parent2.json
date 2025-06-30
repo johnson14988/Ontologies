@@ -1,0 +1,8 @@
+{
+  "$id": "https://example.com/schemas/parent2.json",
+  "type": "object",
+  "properties": {
+    "age": { "type": "integer", "minimum": 0 }
+  },
+  "required": ["age"]
+}
