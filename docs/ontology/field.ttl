@@ -1,0 +1,787 @@
+@prefix : <urn:webprotege:ontology:5fc66701-5d9e-4dfa-b3f5-2b27c9c5e950#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix www: <http://www.example.com#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix example: <http://example.com/> .
+@base <urn:webprotege:ontology:5fc66701-5d9e-4dfa-b3f5-2b27c9c5e950#> .
+
+<https://johnson14988.github.io/Source/docs/ontology/field> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.com/AbstractAlgebra
+example:AbstractAlgebra rdf:type owl:Class ;
+                        rdfs:subClassOf example:Algebra ;
+                        rdfs:label "Abstract Algebra"@en .
+
+
+###  http://example.com/Algebra
+example:Algebra rdf:type owl:Class ;
+                rdfs:subClassOf example:Maths ;
+                rdfs:label "Algebra"@en .
+
+
+###  http://example.com/AlgebraicGeometry
+example:AlgebraicGeometry rdf:type owl:Class ;
+                          rdfs:subClassOf example:Algebra ,
+                                          example:Geometry ;
+                          rdfs:label "Algebraic Geometry"@en .
+
+
+###  http://example.com/AlgebraicTopology
+example:AlgebraicTopology rdf:type owl:Class ;
+                          rdfs:subClassOf example:Algebra ,
+                                          example:Topology ;
+                          rdfs:label "Algebraic Topology"@en .
+
+
+###  http://example.com/Algorithm
+example:Algorithm rdf:type owl:Class ;
+                  rdfs:subClassOf example:ComputerScience ;
+                  rdfs:label "Algorithm"@en .
+
+
+###  http://example.com/AnalogElectronics
+example:AnalogElectronics rdf:type owl:Class ;
+                          rdfs:subClassOf example:Electronics ;
+                          rdfs:label "Analog Electronics"@en .
+
+
+###  http://example.com/AnalyticalMechanics
+example:AnalyticalMechanics rdf:type owl:Class ;
+                            rdfs:subClassOf example:Mechanics ;
+                            rdfs:label "Analytical Mechanics"@en .
+
+
+###  http://example.com/Arabic
+example:Arabic rdf:type owl:Class ;
+               rdfs:subClassOf example:NaturalLanguages ;
+               rdfs:label "Arabic"@en .
+
+
+###  http://example.com/ArtificialIntelligence
+example:ArtificialIntelligence rdf:type owl:Class ;
+                               rdfs:subClassOf example:ComputerScience ;
+                               rdfs:label "Artificial Intelligence"@en .
+
+
+###  http://example.com/Assembly
+example:Assembly rdf:type owl:Class ;
+                 rdfs:subClassOf example:ComputerArchitecture ;
+                 rdfs:label "Assembly"@en .
+
+
+###  http://example.com/BTC
+example:BTC rdf:type owl:Class ;
+            rdfs:subClassOf example:Cryptos ;
+            rdfs:label "BTC"@en .
+
+
+###  http://example.com/Biochemistry
+example:Biochemistry rdf:type owl:Class ;
+                     rdfs:subClassOf example:Biology ,
+                                     example:Chemistry ;
+                     rdfs:label "Biochemistry"@en .
+
+
+###  http://example.com/Biology
+example:Biology rdf:type owl:Class ;
+                rdfs:subClassOf www:Fields ;
+                rdfs:label "Biology"@en .
+
+
+###  http://example.com/Blockchain
+example:Blockchain rdf:type owl:Class ;
+                   rdfs:subClassOf example:Web3 ;
+                   rdfs:label "Blockchain"@en .
+
+
+###  http://example.com/C
+example:C rdf:type owl:Class ;
+          rdfs:subClassOf example:GPLs ;
+          rdfs:label "C"@en .
+
+
+###  http://example.com/CeFi
+example:CeFi rdf:type owl:Class ;
+             rdfs:subClassOf example:Finance ;
+             rdfs:label "CeFi"@en .
+
+
+###  http://example.com/Chemistry
+example:Chemistry rdf:type owl:Class ;
+                  rdfs:subClassOf www:Fields ;
+                  rdfs:label "Chemistry"@en .
+
+
+###  http://example.com/ClassicInformationTheory
+example:ClassicInformationTheory rdf:type owl:Class ;
+                                 rdfs:subClassOf example:InformationTheory ;
+                                 rdfs:label "Classical Information Theory"@en .
+
+
+###  http://example.com/ClassicalMechanics
+example:ClassicalMechanics rdf:type owl:Class ;
+                           rdfs:subClassOf example:Mechanics ;
+                           rdfs:label "Newtonian Mechanics"@en .
+
+
+###  http://example.com/Combinatorics
+example:Combinatorics rdf:type owl:Class ;
+                      rdfs:subClassOf example:DiscreteMaths ;
+                      rdfs:label "Combinatorics"@en .
+
+
+###  http://example.com/Compilation
+example:Compilation rdf:type owl:Class ;
+                    rdfs:subClassOf example:ComputerScience ;
+                    rdfs:label "Compilation"@en .
+
+
+###  http://example.com/ComplexAnalysis
+example:ComplexAnalysis rdf:type owl:Class ;
+                        rdfs:subClassOf example:MathematicalAnalysis ;
+                        rdfs:label "Complex Analysis"@en .
+
+
+###  http://example.com/ComputerArchitecture
+example:ComputerArchitecture rdf:type owl:Class ;
+                             rdfs:subClassOf example:ComputerScience ;
+                             rdfs:label "Computer Architecture"@en .
+
+
+###  http://example.com/ComputerNetwork
+example:ComputerNetwork rdf:type owl:Class ;
+                        rdfs:subClassOf example:ComputerScience ;
+                        rdfs:label "Computer Network"@en .
+
+
+###  http://example.com/ComputerScience
+example:ComputerScience rdf:type owl:Class ;
+                        rdfs:subClassOf www:Fields ;
+                        rdfs:label "Computer Science"@en .
+
+
+###  http://example.com/ComputerVision
+example:ComputerVision rdf:type owl:Class ;
+                       rdfs:subClassOf example:ArtificialIntelligence ;
+                       rdfs:label "Computer Vision"@en .
+
+
+###  http://example.com/CondensedMatterPhysics
+example:CondensedMatterPhysics rdf:type owl:Class ;
+                               rdfs:subClassOf example:Physics ;
+                               rdfs:label "Condensed Matter Physics"@en .
+
+
+###  http://example.com/ConvexAnalysis
+example:ConvexAnalysis rdf:type owl:Class ;
+                       rdfs:subClassOf example:MathematicalAnalysis ;
+                       rdfs:label "Convex Analysis"@en .
+
+
+###  http://example.com/ConvexGeometry
+example:ConvexGeometry rdf:type owl:Class ;
+                       rdfs:subClassOf example:Geometry ;
+                       rdfs:label "Convex Geometry"@en .
+
+
+###  http://example.com/Cryptocurrency
+example:Cryptocurrency rdf:type owl:Class ;
+                       rdfs:subClassOf example:DeFi ;
+                       rdfs:label "Cryptocurrency"@en .
+
+
+###  http://example.com/Cryptos
+example:Cryptos rdf:type owl:Class ;
+                rdfs:subClassOf example:Web3 ;
+                rdfs:label "Cryptos"@en .
+
+
+###  http://example.com/DApps
+example:DApps rdf:type owl:Class ;
+              rdfs:subClassOf example:Web3 ;
+              rdfs:label "DApps"@en .
+
+
+###  http://example.com/DSLs
+example:DSLs rdf:type owl:Class ;
+             rdfs:subClassOf example:ProgrammingLanguage ;
+             rdfs:label "DSLs"@en .
+
+
+###  http://example.com/DataScience
+example:DataScience rdf:type owl:Class ;
+                    rdfs:subClassOf example:ComputerScience ;
+                    rdfs:label "Data Science"@en .
+
+
+###  http://example.com/DeFi
+example:DeFi rdf:type owl:Class ;
+             rdfs:subClassOf example:Finance ,
+                             example:Web3 ;
+             rdfs:label "DeFi"@en .
+
+
+###  http://example.com/DeepLearning
+example:DeepLearning rdf:type owl:Class ;
+                     rdfs:subClassOf example:ArtificialIntelligence ;
+                     rdfs:label "Deep Learning"@en .
+
+
+###  http://example.com/DifferentialGeometry
+example:DifferentialGeometry rdf:type owl:Class ;
+                             rdfs:subClassOf example:Geometry ,
+                                             example:RealAnalysis ;
+                             rdfs:label "Differential Geometry"@en .
+
+
+###  http://example.com/DifferentialTopology
+example:DifferentialTopology rdf:type owl:Class ;
+                             rdfs:subClassOf example:RealAnalysis ,
+                                             example:Topology ;
+                             rdfs:label "Differential Topology"@en .
+
+
+###  http://example.com/DigitalElectronics
+example:DigitalElectronics rdf:type owl:Class ;
+                           rdfs:subClassOf example:Electronics ;
+                           rdfs:label "Digital Electronics"@en .
+
+
+###  http://example.com/DiscreteMaths
+example:DiscreteMaths rdf:type owl:Class ;
+                      rdfs:subClassOf example:Maths ;
+                      rdfs:label "Discrete Maths"@en .
+
+
+###  http://example.com/Docker
+example:Docker rdf:type owl:Class ;
+               rdfs:subClassOf example:Virtualization ;
+               rdfs:label "Docker"@en .
+
+
+###  http://example.com/ETH
+example:ETH rdf:type owl:Class ;
+            rdfs:subClassOf example:Cryptos ;
+            rdfs:label "ETH"@en .
+
+
+###  http://example.com/Economics
+example:Economics rdf:type owl:Class ;
+                  rdfs:subClassOf www:Fields ;
+                  rdfs:label "Economics"@en .
+
+
+###  http://example.com/Electromagnetics
+example:Electromagnetics rdf:type owl:Class ;
+                         rdfs:subClassOf example:Physics ;
+                         rdfs:label "Electromagnetics"@en .
+
+
+###  http://example.com/Electronics
+example:Electronics rdf:type owl:Class ;
+                    rdfs:subClassOf www:Fields ;
+                    rdfs:label "Electronics"@en .
+
+
+###  http://example.com/EmbeddedSystems
+example:EmbeddedSystems rdf:type owl:Class ;
+                        rdfs:subClassOf example:ComputerScience ;
+                        rdfs:label "Embedded Systems"@en .
+
+
+###  http://example.com/English
+example:English rdf:type owl:Class ;
+                rdfs:subClassOf example:NaturalLanguages ;
+                rdfs:label "English"@en .
+
+
+###  http://example.com/Ethers.js
+example:Ethers.js rdf:type owl:Class ;
+                  rdfs:subClassOf example:DApps ;
+                  rdfs:label "Ethers.js"@en .
+
+
+###  http://example.com/Finance
+example:Finance rdf:type owl:Class ;
+                rdfs:subClassOf www:Fields .
+
+
+###  http://example.com/FluidMechanics
+example:FluidMechanics rdf:type owl:Class ;
+                       rdfs:subClassOf example:Mechanics ;
+                       rdfs:label "Fluid Mechanics"@en .
+
+
+###  http://example.com/Forex
+example:Forex rdf:type owl:Class ;
+              rdfs:subClassOf example:CeFi ;
+              rdfs:label "Forex"@en .
+
+
+###  http://example.com/FourierAnalysis
+example:FourierAnalysis rdf:type owl:Class ;
+                        rdfs:subClassOf example:MathematicalAnalysis ;
+                        rdfs:label "Fourier Analysis"@en .
+
+
+###  http://example.com/French
+example:French rdf:type owl:Class ;
+               rdfs:subClassOf example:NaturalLanguages ;
+               rdfs:label "French"@en .
+
+
+###  http://example.com/Frontend
+example:Frontend rdf:type owl:Class ;
+                 rdfs:subClassOf example:WebDev ;
+                 rdfs:label "Frontend"@en .
+
+
+###  http://example.com/FunctionalAnalysis
+example:FunctionalAnalysis rdf:type owl:Class ;
+                           rdfs:subClassOf example:MathematicalAnalysis ;
+                           rdfs:label "Functional Analysis"@en .
+
+
+###  http://example.com/GPLs
+example:GPLs rdf:type owl:Class ;
+             rdfs:subClassOf example:ProgrammingLanguage ;
+             rdfs:label "GPLs"@en .
+
+
+###  http://example.com/GeometricTopology
+example:GeometricTopology rdf:type owl:Class ;
+                          rdfs:subClassOf example:Geometry ,
+                                          example:Topology ;
+                          rdfs:label "Geometric Topology"@en .
+
+
+###  http://example.com/Geometry
+example:Geometry rdf:type owl:Class ;
+                 rdfs:subClassOf example:Maths ;
+                 rdfs:label "Geometry"@en .
+
+
+###  http://example.com/German
+example:German rdf:type owl:Class ;
+               rdfs:subClassOf example:NaturalLanguages ;
+               rdfs:label "German"@en .
+
+
+###  http://example.com/GraphTheory
+example:GraphTheory rdf:type owl:Class ;
+                    rdfs:subClassOf example:DiscreteMaths ;
+                    rdfs:label "Graph Theory"@en .
+
+
+###  http://example.com/Hardware
+example:Hardware rdf:type owl:Class ;
+                 rdfs:subClassOf example:ComputerArchitecture ;
+                 rdfs:label "Hardware"@en .
+
+
+###  http://example.com/HarmonicAnalysis
+example:HarmonicAnalysis rdf:type owl:Class ;
+                         rdfs:subClassOf example:MathematicalAnalysis ;
+                         rdfs:label "Harmonic Analysis"@en .
+
+
+###  http://example.com/HomologicalAlgebra
+example:HomologicalAlgebra rdf:type owl:Class ;
+                           rdfs:subClassOf example:Algebra ;
+                           rdfs:label "Homological Algebra"@en .
+
+
+###  http://example.com/HumanPhysiology
+example:HumanPhysiology rdf:type owl:Class ;
+                        rdfs:subClassOf example:Biology ;
+                        rdfs:label "Human Physiology"@en .
+
+
+###  http://example.com/ICT
+example:ICT rdf:type owl:Class ;
+            rdfs:subClassOf example:ComputerNetwork ,
+                            example:Electronics ,
+                            example:InformationTheory ;
+            rdfs:label "ICT"@en .
+
+
+###  http://example.com/InformationTheory
+example:InformationTheory rdf:type owl:Class ;
+                          rdfs:subClassOf www:Fields ;
+                          rdfs:label "Information Theory"@en .
+
+
+###  http://example.com/Japanese
+example:Japanese rdf:type owl:Class ;
+                 rdfs:subClassOf example:NaturalLanguages ;
+                 rdfs:label "Japanese"@en .
+
+
+###  http://example.com/Java
+example:Java rdf:type owl:Class ;
+             rdfs:subClassOf example:GPLs ;
+             rdfs:label "Java"@en .
+
+
+###  http://example.com/LEAN4
+example:LEAN4 rdf:type owl:Class ;
+              rdfs:subClassOf example:DSLs ;
+              rdfs:label "LEAN4"@en .
+
+
+###  http://example.com/Language
+example:Language rdf:type owl:Class ;
+                 rdfs:subClassOf www:Fields .
+
+
+###  http://example.com/LieAlgebra
+example:LieAlgebra rdf:type owl:Class ;
+                   rdfs:subClassOf example:Algebra ;
+                   rdfs:label "Lie Algebra"@en .
+
+
+###  http://example.com/LinearAlgebra
+example:LinearAlgebra rdf:type owl:Class ;
+                      rdfs:subClassOf example:Algebra ;
+                      rdfs:label "Linear Algebra"@en .
+
+
+###  http://example.com/Logic
+example:Logic rdf:type owl:Class ;
+              rdfs:subClassOf example:DiscreteMaths ;
+              rdfs:label "Logic"@en .
+
+
+###  http://example.com/MachineLearning
+example:MachineLearning rdf:type owl:Class ;
+                        rdfs:subClassOf example:ArtificialIntelligence ;
+                        rdfs:label "Machine Learning"@en .
+
+
+###  http://example.com/Macroeconomics
+example:Macroeconomics rdf:type owl:Class ;
+                       rdfs:subClassOf example:Economics ;
+                       rdfs:label "Macroeconomics"@en .
+
+
+###  http://example.com/MathematicalAnalysis
+example:MathematicalAnalysis rdf:type owl:Class ;
+                             rdfs:subClassOf example:Maths ;
+                             rdfs:label "Mathematical Analysis"@en .
+
+
+###  http://example.com/MathematicalModeling
+example:MathematicalModeling rdf:type owl:Class ;
+                             rdfs:subClassOf example:Maths ;
+                             rdfs:label "Mathematical Modeling"@en .
+
+
+###  http://example.com/Maths
+example:Maths rdf:type owl:Class ;
+              rdfs:subClassOf www:Fields .
+
+
+###  http://example.com/Mechanics
+example:Mechanics rdf:type owl:Class ;
+                  rdfs:subClassOf example:Physics ;
+                  rdfs:label "Mechanics"@en .
+
+
+###  http://example.com/Microeconomics
+example:Microeconomics rdf:type owl:Class ;
+                       rdfs:subClassOf example:Economics ;
+                       rdfs:label "Microeconomics"@en .
+
+
+###  http://example.com/NLP
+example:NLP rdf:type owl:Class ;
+            rdfs:subClassOf example:ArtificialIntelligence ,
+                            example:Language .
+
+
+###  http://example.com/NaturalLanguages
+example:NaturalLanguages rdf:type owl:Class ;
+                         rdfs:subClassOf example:Language ;
+                         rdfs:label "Natural Languages"@en .
+
+
+###  http://example.com/NetworkProtocol
+example:NetworkProtocol rdf:type owl:Class ;
+                        rdfs:subClassOf example:ComputerNetwork ;
+                        rdfs:label "Network Protocol"@en .
+
+
+###  http://example.com/NetworkSecurity
+example:NetworkSecurity rdf:type owl:Class ;
+                        rdfs:subClassOf example:ComputerNetwork ;
+                        rdfs:label "Network Security"@en .
+
+
+###  http://example.com/Non-EuclideanGeometry
+example:Non-EuclideanGeometry rdf:type owl:Class ;
+                              rdfs:subClassOf example:Geometry ;
+                              rdfs:label "Non-Euclidean Geometry"@en .
+
+
+###  http://example.com/NumberTheory
+example:NumberTheory rdf:type owl:Class ;
+                     rdfs:subClassOf example:DiscreteMaths ;
+                     rdfs:label "Number Theory"@en .
+
+
+###  http://example.com/OperatingSystem
+example:OperatingSystem rdf:type owl:Class ;
+                        rdfs:subClassOf example:ComputerScience ;
+                        rdfs:label "Operating System"@en .
+
+
+###  http://example.com/Optics
+example:Optics rdf:type owl:Class ;
+               rdfs:subClassOf example:Physics ;
+               rdfs:label "Optics"@en .
+
+
+###  http://example.com/Option
+example:Option rdf:type owl:Class ;
+               rdfs:subClassOf example:CeFi ;
+               rdfs:label "Option"@en .
+
+
+###  http://example.com/OrganicChemistry
+example:OrganicChemistry rdf:type owl:Class ;
+                         rdfs:subClassOf example:Chemistry ;
+                         rdfs:label "Organic Chemistry"@en .
+
+
+###  http://example.com/Philosophy
+example:Philosophy rdf:type owl:Class ;
+                   rdfs:subClassOf www:Fields .
+
+
+###  http://example.com/Physics
+example:Physics rdf:type owl:Class ;
+                rdfs:subClassOf www:Fields .
+
+
+###  http://example.com/Point-setTopology
+example:Point-setTopology rdf:type owl:Class ;
+                          rdfs:subClassOf example:Topology ;
+                          rdfs:label "Point-set Topology"@en .
+
+
+###  http://example.com/ProgrammingLanguage
+example:ProgrammingLanguage rdf:type owl:Class ;
+                            rdfs:subClassOf example:ComputerScience ;
+                            rdfs:label "Programming Language"@en .
+
+
+###  http://example.com/ProjectiveGeometry
+example:ProjectiveGeometry rdf:type owl:Class ;
+                           rdfs:subClassOf example:Geometry ;
+                           rdfs:label "Projective Geometry"@en .
+
+
+###  http://example.com/Psychology
+example:Psychology rdf:type owl:Class ;
+                   rdfs:subClassOf www:Fields .
+
+
+###  http://example.com/Python
+example:Python rdf:type owl:Class ;
+               rdfs:subClassOf example:GPLs ;
+               rdfs:label "Python"@en .
+
+
+###  http://example.com/QuantumInformationTheory
+example:QuantumInformationTheory rdf:type owl:Class ;
+                                 rdfs:subClassOf example:InformationTheory ,
+                                                 example:QuantumMechanics ;
+                                 rdfs:label "Quantum Information Theory"@en .
+
+
+###  http://example.com/QuantumMechanics
+example:QuantumMechanics rdf:type owl:Class ;
+                         rdfs:subClassOf example:Physics ;
+                         rdfs:label "Quantum Mechanics"@en .
+
+
+###  http://example.com/RFElectronics
+example:RFElectronics rdf:type owl:Class ;
+                      rdfs:subClassOf example:Electronics ;
+                      rdfs:label "RF Electronics"@en .
+
+
+###  http://example.com/React.js
+example:React.js rdf:type owl:Class ;
+                 rdfs:subClassOf example:Frontend ;
+                 rdfs:label "React.js"@en .
+
+
+###  http://example.com/RealAnalysis
+example:RealAnalysis rdf:type owl:Class ;
+                     rdfs:subClassOf example:MathematicalAnalysis ;
+                     rdfs:label "Real Analysis"@en .
+
+
+###  http://example.com/Relativity
+example:Relativity rdf:type owl:Class ;
+                   rdfs:subClassOf example:Physics ;
+                   rdfs:label "Relativity"@en .
+
+
+###  http://example.com/RepresentationTheory
+example:RepresentationTheory rdf:type owl:Class ;
+                             rdfs:subClassOf example:Algebra ;
+                             rdfs:label "Representation Theory"@en .
+
+
+###  http://example.com/RiemannianGeometry
+example:RiemannianGeometry rdf:type owl:Class ;
+                           rdfs:subClassOf example:DifferentialGeometry ;
+                           rdfs:label "Riemannian Geometry"@en .
+
+
+###  http://example.com/SQL
+example:SQL rdf:type owl:Class ;
+            rdfs:subClassOf example:DSLs ;
+            rdfs:label "SQL"@en .
+
+
+###  http://example.com/SetTheory
+example:SetTheory rdf:type owl:Class ;
+                  rdfs:subClassOf example:DiscreteMaths ;
+                  rdfs:label "Set Theory"@en .
+
+
+###  http://example.com/SolidStatePhysics
+example:SolidStatePhysics rdf:type owl:Class ;
+                          rdfs:subClassOf example:CondensedMatterPhysics ;
+                          rdfs:label "Solid State Physics"@en .
+
+
+###  http://example.com/Solidity
+example:Solidity rdf:type owl:Class ;
+                 rdfs:subClassOf example:Blockchain ,
+                                 example:DSLs ;
+                 rdfs:label "Solidity"@en .
+
+
+###  http://example.com/StatisticalPhysics
+example:StatisticalPhysics rdf:type owl:Class ;
+                           rdfs:subClassOf example:Physics ;
+                           rdfs:label "Statistical Physics"@en .
+
+
+###  http://example.com/Statistics
+example:Statistics rdf:type owl:Class ;
+                   rdfs:subClassOf example:Maths ;
+                   rdfs:label "Statistics"@en .
+
+
+###  http://example.com/Stock
+example:Stock rdf:type owl:Class ;
+              rdfs:subClassOf example:CeFi ;
+              rdfs:label "Stock"@en .
+
+
+###  http://example.com/Thermodynamics
+example:Thermodynamics rdf:type owl:Class ;
+                       rdfs:subClassOf example:Physics ;
+                       rdfs:label "Thermodynamics"@en .
+
+
+###  http://example.com/Topology
+example:Topology rdf:type owl:Class ;
+                 rdfs:subClassOf example:Maths ;
+                 rdfs:label "Topology"@en .
+
+
+###  http://example.com/VirtualMachine
+example:VirtualMachine rdf:type owl:Class ;
+                       rdfs:subClassOf example:Virtualization ;
+                       rdfs:label "Virtual Machine"@en .
+
+
+###  http://example.com/Virtualization
+example:Virtualization rdf:type owl:Class ;
+                       rdfs:subClassOf example:ComputerScience ;
+                       rdfs:label "Virtualization"@en .
+
+
+###  http://example.com/Web3
+example:Web3 rdf:type owl:Class ;
+             rdfs:subClassOf example:ComputerScience ;
+             rdfs:label "Web3"@en .
+
+
+###  http://example.com/Web3.js
+example:Web3.js rdf:type owl:Class ;
+                rdfs:subClassOf example:DApps ;
+                rdfs:label "Web3.js"@en .
+
+
+###  http://example.com/WebDev
+example:WebDev rdf:type owl:Class ;
+               rdfs:subClassOf example:ComputerScience ;
+               rdfs:label "WebDev"@en .
+
+
+###  http://example.com/WebIDL
+example:WebIDL rdf:type owl:Class ;
+               rdfs:subClassOf example:DSLs ;
+               rdfs:label "Web IDL"@en .
+
+
+###  http://example.com/cuTile
+example:cuTile rdf:type owl:Class ;
+               rdfs:subClassOf example:DSLs ;
+               rdfs:label "cuTile"@en .
+
+
+###  http://example.com/C%2B%2B
+<http://example.com/C%2B%2B> rdf:type owl:Class ;
+                             rdfs:subClassOf example:GPLs ;
+                             rdfs:label "C++"@en .
+
+
+###  http://example.com/Js%2FTs
+<http://example.com/Js%2FTs> rdf:type owl:Class ;
+                             rdfs:subClassOf example:GPLs ;
+                             rdfs:label "Js/Ts"@en .
+
+
+###  http://www.example.com#Econometrics
+www:Econometrics rdf:type owl:Class ;
+                 rdfs:subClassOf example:Economics .
+
+
+###  http://www.example.com#Fields
+www:Fields rdf:type owl:Class .
+
+
+###  http://www.example.com#OWL
+www:OWL rdf:type owl:Class ;
+        rdfs:subClassOf example:DSLs ,
+                        www:Ontology ;
+        rdfs:comment "Web Ontology Language 互联网本体语言" .
+
+
+###  http://www.example.com#Ontology
+www:Ontology rdf:type owl:Class ;
+             rdfs:subClassOf www:Semantic_Web .
+
+
+###  http://www.example.com#Semantic_Web
+www:Semantic_Web rdf:type owl:Class ;
+                 rdfs:subClassOf example:ComputerScience ;
+                 rdfs:label "Semantic Web" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
